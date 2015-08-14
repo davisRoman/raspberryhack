@@ -108,3 +108,36 @@ NOTICE: the software on this Raspberry Pi has not been fully configured. Please 
 
 pi@raspberrypi:~$ 
 ```
+
+## Connect usb wifi adapter
+
+![trendnet](http://www.trendnet.com/images/products/photos/TEW-648UBM/TEW-648UBM_d01_2.jpg)
+
+Check that the system correctly recognizes the device:
+
+
+```
+pi@raspberrypi:~$ lsusb
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. 
+Bus 001 Device 004: ID 20f4:648b TRENDnet TEW-648UBM 802.11n 150Mbps Micro Wireless N Adapter [Realtek RTL8188CUS]
+pi@raspberrypi:~$
+```
+
+
+Cool trendnet appears on the list
+
+typing `ifconfig wlan0` reveals that the wifi interface is up.
+
+```
+pi@raspberrypi:~$ ifconfig wlan0
+wlan0     Link encap:Ethernet  HWaddr d8:eb:97:2e:34:48  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+pi@raspberrypi:~$
+```
