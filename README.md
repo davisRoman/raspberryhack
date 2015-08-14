@@ -65,3 +65,23 @@ davis@builder1:~/Downloads$
 My corresponding device file is /dev/ttyUSB0
 
 Open minicom with /dev/ttyUSB0
+
+```
+    +-----------------------------------------------------------------------+
+    | A -    Serial Device      : /dev/ttyUSB0                              |
+    | B - Lockfile Location     : /var/lock                                 |
+    | C -   Callin Program      :                                           |
+    | D -  Callout Program      :                                           |
+    | E -    Bps/Par/Bits       : 115200 8N1                                |
+    | F - Hardware Flow Control : Yes                                       |
+    | G - Software Flow Control : No                                        |
+    |                                                                       |
+    |    Change which setting?                                              |
+    +-----------------------------------------------------------------------+
+            | Screen and keyboard      |
+            | Save setup as dfl        |
+            | Save setup as..          |
+            | Exit                     |
+            | Exit from Minicom        |
+            +--------------------------+
+```
