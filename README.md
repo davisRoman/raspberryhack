@@ -109,6 +109,11 @@ NOTICE: the software on this Raspberry Pi has not been fully configured. Please 
 pi@raspberrypi:~$ 
 ```
 
+## using raspi-config to expand filesystem and enable camera support
+```
+sudo raspi-config
+```
+
 ## Connect usb wifi adapter
 
 ![trendnet](http://www.trendnet.com/images/products/photos/TEW-648UBM/TEW-648UBM_d01_2.jpg)
