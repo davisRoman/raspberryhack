@@ -141,3 +141,22 @@ wlan0     Link encap:Ethernet  HWaddr d8:eb:97:2e:34:48
 
 pi@raspberrypi:~$
 ```
+
+## Use the wpa_supplicant daemon to connect to a wifi access point using WPA-PSK security.
+
+Using your editor of choice, modify wpa_supplicant config file:
+
+pi@raspberrypi:~$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+append the following settings:
+
+```
+network={
+ssid="INSERT_ACCESSPOINT_NAME_HERE"
+psk="INSERT_ACCESSPOINT_PASSWORD"
+proto=RSN
+key_mgmt=WPA-PSK
+pairwise=CCMP
+auth_alg=OPEN
+}
+```
