@@ -111,7 +111,7 @@ pi@raspberrypi:~$
 
 ## using raspi-config to expand filesystem and enable camera support
 ```
-sudo raspi-config
+pi@raspberrypi:~$ sudo raspi-config
 ```
 
 ## Connect usb wifi adapter
