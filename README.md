@@ -146,8 +146,9 @@ pi@raspberrypi:~$
 
 Using your editor of choice, modify wpa_supplicant config file:
 
+```
 pi@raspberrypi:~$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-
+```
 append the following settings:
 
 ```
