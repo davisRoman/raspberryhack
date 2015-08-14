@@ -161,3 +161,51 @@ pairwise=CCMP
 auth_alg=OPEN
 }
 ```
+
+Then bring down the wifi interface:
+
+```
+pi@raspberrypi:~$ sudo ifdown wlan0
+```
+
+Then bring it up up
+```
+pi@raspberrypi:~$ sudo ifup wlan0
+```
+
+You should see the following output:
+
+```
+ioctl[SIOCSIWAP]: Operation not permitted
+ioctl[SIOCSIWENCODEEXT]: Invalid argument
+ioctl[SIOCSIWENCODEEXT]: Invalid argument
+pi@raspberrypi:~$
+```
+
+Check if your wifi interface has acquired an ip address:
+
+```
+pi@raspberrypi:~$ ifconfig wlan0
+wlan0     Link encap:Ethernet  HWaddr d8:eb:97:2e:34:48  
+          inet addr:192.168.1.107  Bcast:192.168.1.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:9 errors:0 dropped:20 overruns:0 frame:0
+          TX packets:26 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:7943 (7.7 KiB)  TX bytes:15013 (14.6 KiB)
+```
+
+We did!
+
+Use the ping command to see if we can going to google.
+
+```
+pi@raspberrypi:~$ ping google.com
+PING google.com (74.125.226.64) 56(84) bytes of data.
+64 bytes from lga15s44-in-f0.1e100.net (74.125.226.64): icmp_req=1 ttl=51 time=12.2 ms
+64 bytes from lga15s44-in-f0.1e100.net (74.125.226.64): icmp_req=2 ttl=51 time=43.2 ms
+64 bytes from lga15s44-in-f0.1e100.net (74.125.226.64): icmp_req=3 ttl=51 time=4.53 ms
+```
+
+Success!
+
