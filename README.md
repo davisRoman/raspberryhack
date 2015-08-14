@@ -85,3 +85,26 @@ Open minicom with /dev/ttyUSB0 with flow control disabled
             | Exit from Minicom        |
             +--------------------------+
 ```
+
+In the following to login:
+
+raspberrypi login: pi                   
+Password: rasbperry
+
+
+If login is correct, you'll see the following:
+
+```
+Linux raspberrypi 3.18.11-v7+ #781 SMP PREEMPT Tue Apr 21 18:07:59 BST 2015 armv7l
+                                        
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+NOTICE: the software on this Raspberry Pi has not been fully configured. Please run 'sudo raspi-config'
+
+pi@raspberrypi:~$ 
+```
