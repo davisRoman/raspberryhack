@@ -64,7 +64,7 @@ davis@builder1:~/Downloads$
 
 My corresponding device file is /dev/ttyUSB0
 
-Open minicom with /dev/ttyUSB0
+Open minicom with /dev/ttyUSB0 with flow control disabled
 
 ```
     +-----------------------------------------------------------------------+
@@ -73,7 +73,7 @@ Open minicom with /dev/ttyUSB0
     | C -   Callin Program      :                                           |
     | D -  Callout Program      :                                           |
     | E -    Bps/Par/Bits       : 115200 8N1                                |
-    | F - Hardware Flow Control : Yes                                       |
+    | F - Hardware Flow Control : No                                        |
     | G - Software Flow Control : No                                        |
     |                                                                       |
     |    Change which setting?                                              |
